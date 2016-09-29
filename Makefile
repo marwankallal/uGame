@@ -32,6 +32,7 @@ $(OBJECTS): $(OBJDIR)/%.o : $(SRCDIR)/%.c
 
 clean:
 	@$(rm) $(OBJECTS)
+	@$(rm) $(BINDIR)/*
 	@echo "Cleanup complete!"
 
 .PHONEY: remove
